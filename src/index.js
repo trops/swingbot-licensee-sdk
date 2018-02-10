@@ -1,5 +1,2 @@
 import uploadVideo from './upload.js';
-
-export {
-  uploadVideo
-};
+export { uploadVideo };

@@ -27,17 +27,14 @@ const config = {
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
-  // externals: {
-  //   // Use more complicated mapping for lodash.
-  //   // We need to access it differently depending
-  //   // on the environment.
-  //   axios: {
-  //     commonjs: 'axios',
-  //     commonjs2: 'axios',
-  //     amd: 'axios',
-  //     root: 'axios'
-  //   }
-  // },
+  externals: {
+    axios: {
+      commonjs: 'axios',
+      commonjs2: 'axios',
+      amd: 'axios',
+      root: 'axios'
+    }
+  },
   module: {
     rules: [
       {
