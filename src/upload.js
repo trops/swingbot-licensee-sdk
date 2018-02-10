@@ -65,4 +65,4 @@ const uploadVideo = (file, email, processType, apiKey) => {
     .catch(err => err);
 };
 
-export default uploadVideo;
+module.exports = uploadVideo;

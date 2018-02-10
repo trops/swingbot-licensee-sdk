@@ -23,7 +23,7 @@ const config = {
   output: {
     path: __dirname + '/lib',
     filename: outputFile,
-    library: 'SwingbotLicenseeSDK',
+    library: 'swingbot-license-sdk',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },

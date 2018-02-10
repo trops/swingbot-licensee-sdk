@@ -8,9 +8,11 @@ To get an API Key for the system, please contact john@swingbot.com or visit http
 
 You can install this via the script tag in your HTML page, or via npm.
 
-## Installation via npm or yarn
+## Installation via npm
 
-
+```
+npm install swingbot-licensee-sdk --save
+```
 
 ## Installation via <script> tag
 
