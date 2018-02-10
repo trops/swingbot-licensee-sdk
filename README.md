@@ -24,7 +24,14 @@ uploadVideo(file, email, processType, apiKey)
   .catch(err => console.log(e));
 ```
 
-## Installation via <script> tag
+## Installation via Static JS Library
+
+Minified Library
+```
+lib/SwingbotLicenseeSDK.min.js
+```
+
+Working HTML Example
 
 ```
 <html>
