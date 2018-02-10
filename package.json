@@ -1,8 +1,8 @@
 {
   "name": "swingbot-licensee-sdk",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Swingbot Licensee SDK for uploading videos",
-  "main": "lib/library.js",
+  "main": "src/index.js",
   "scripts": {
     "build": "webpack --env dev && webpack --env build && npm run test",
     "dev": "webpack --progress --colors --env dev",
