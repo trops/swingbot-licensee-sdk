@@ -1,0 +1,33 @@
+<html>
+<head>
+  <title>Swingbot Licensee SDK Test Page</title>
+  <script src="./lib/SwingbotLicenseeSDK.js"></script>
+</head>
+<body>
+  <h1>Testing the SDK</h1>
+  <p>Select a file to upload and press submit to begin upload</p>
+  <br />
+  <input type="file" id="videoFile" name="files[]" onChange="handleChange()" />
+</body>
+<script type="text/javascript">
+  /**
+   * When a user chooses a video, this will be called
+   * and the upload will begin!
+   */
+  function handleChange() {
+    const file = document.getElementById('videoFile').files[0];
+    // upload the file..
+    SwingbotLicenseeSDK.uploadVideo(
+      file,
+      'john.giatropoulos@gmail.com',
+      'analyze',
+      '12345' // API KEY
+    ).then((result, err) => {
+      if (err) {
+        console.log(err);
+      }
+      console.log(result);
+    }).catch(err => console.log('error', err));
+  }
+</script>
+</html>
