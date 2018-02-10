@@ -27,14 +27,14 @@ const config = {
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
-  // externals: {
-  //   axios: {
-  //     commonjs: 'axios',
-  //     commonjs2: 'axios',
-  //     amd: 'axios',
-  //     root: 'axios'
-  //   }
-  // },
+  externals: {
+    axios: {
+      commonjs: 'axios',
+      commonjs2: 'axios',
+      amd: 'axios',
+      root: 'axios'
+    }
+  },
   module: {
     rules: [
       {
