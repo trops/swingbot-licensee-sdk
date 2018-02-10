@@ -14,6 +14,16 @@ You can install this via the script tag in your HTML page, or via npm.
 npm install swingbot-licensee-sdk --save
 ```
 
+Example usage:
+
+```
+import uploadVideo from 'swingbot-licensee-sdk';
+
+uploadVideo(file, email, processType, apiKey)
+  .then(result => console.log(result))
+  .catch(err => console.log(e));
+```
+
 ## Installation via <script> tag
 
 ```
