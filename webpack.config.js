@@ -4,9 +4,8 @@ const webpack = require('webpack');
 const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 const path = require('path');
 const env = require('yargs').argv.env; // use --env with webpack 2
-const pkg = require('./package.json');
 
-let libraryName = pkg.name;
+let libraryName = 'SwingbotLicenseeSDK';
 
 let plugins = [], outputFile;
 
@@ -23,18 +22,18 @@ const config = {
   output: {
     path: __dirname + '/lib',
     filename: outputFile,
-    library: 'swingbot-license-sdk',
+    library: 'SwingbotLicenseeSDK',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
-  externals: {
-    axios: {
-      commonjs: 'axios',
-      commonjs2: 'axios',
-      amd: 'axios',
-      root: 'axios'
-    }
-  },
+  // externals: {
+  //   axios: {
+  //     commonjs: 'axios',
+  //     commonjs2: 'axios',
+  //     amd: 'axios',
+  //     root: 'axios'
+  //   }
+  // },
   module: {
     rules: [
       {

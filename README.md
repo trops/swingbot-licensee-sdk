@@ -30,7 +30,7 @@ uploadVideo(file, email, processType, apiKey)
 <html>
 <head>
   <title>Swingbot Licensee SDK Test Page</title>
-  <script src="SwingbotLicenseeSDK.min.js"></script>
+  <script src="swingbot-licensee-sdk.min.js"></script>
 </head>
 <body>
   <h1>Working Example</h1>
