@@ -48,7 +48,7 @@ uploadVideo(file, email, processType, apiKey)
     // upload the file..
     SwingbotLicenseeSDK.uploadVideo(
       file,
-      '<email-of-golfer-in-video',
+      'golfers@email.com',
       'analyze', // process-type
       '<YOUR-API-KEY>'
     ).then((result, err) => {
