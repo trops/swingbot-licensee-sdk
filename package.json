@@ -14,7 +14,7 @@
     "licensee",
     "sdk"
   ],
-  "author": "John P. Giatropoulos",
+  "author": "John P. Giatropoulos <john.giatropoulos@gmail.com>",
   "repository": {
     "type": "git",
     "url": "git@github.com:trops/swingbot-licensee-sdk.git"
