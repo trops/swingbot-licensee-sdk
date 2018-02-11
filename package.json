@@ -1,6 +1,6 @@
 {
   "name": "swingbot-licensee-sdk",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Swingbot Licensee SDK for uploading videos",
   "main": "src/index.js",
   "scripts": {
@@ -28,6 +28,7 @@
     "babel-loader": "^7.1.2",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
     "chai": "^4.1.2",
     "eslint": "^4.13.1",
     "eslint-loader": "^1.9.0",

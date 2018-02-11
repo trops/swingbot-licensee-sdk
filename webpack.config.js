@@ -26,20 +26,23 @@ const config = {
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
-  // externals: {
-  //   axios: {
-  //     commonjs: 'axios',
-  //     commonjs2: 'axios',
-  //     amd: 'axios',
-  //     root: 'axios'
-  //   }
-  // },
+  externals: {
+    axios: {
+      commonjs: 'axios',
+      commonjs2: 'axios',
+      amd: 'axios',
+      root: 'axios'
+    }
+  },
   module: {
-    rules: [
+    loaders: [
       {
-        test: /(\.jsx|\.js)$/,
+        test: /\.js$/,
         loader: 'babel-loader',
-        exclude: /(node_modules|bower_components)/
+        exclude: /(node_modules|bower_components)/,
+        query: {
+          presets: ['env']
+        }
       },
       {
         test: /(\.jsx|\.js)$/,
