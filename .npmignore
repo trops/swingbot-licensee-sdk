@@ -1,0 +1,14 @@
+.editorconfig
+webpack.config.js
+yarn.lock
+index.html
+.travis.yml
+test
+src
+package.default.json
+.babelrc
+.eslintrc
+.gitignore
+.npmignore
+swingbot-licensee-sdk.js.map
+swingbot-licensee-sdk.min.js
