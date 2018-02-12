@@ -19,7 +19,7 @@ Example usage:
 ```
 import uploadVideo from 'swingbot-licensee-sdk';
 
-uploadVideo(file, email, processType, apiKey)
+uploadVideo(file, email, processType, licenseeCampaignId, apiKey)
   .then(result => console.log(result))
   .catch(err => console.log(e));
 ```

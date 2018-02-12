@@ -1,6 +1,6 @@
 {
   "name": "swingbot-licensee-sdk",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "Swingbot Licensee SDK for uploading videos",
   "main": "lib/swingbot-licensee-sdk.js",
   "scripts": {
