@@ -58,10 +58,10 @@ const processVideoFile = (filename, email, processType, licenseeCampaignId, apiK
 /**
  * the main function!
  */
-const uploadVideo = (file, email, processType, apiKey) => {
+const uploadVideo = (file, email, processType, licenseeCampaignId, apiKey) => {
   return getSignedUrl(file.name, apiKey)
     .then(urlResults => uploadVideoFile(urlResults.data.url, file))
-    .then(uploadResult => processVideoFile(file.name, email, processType, 50, apiKey))
+    .then(uploadResult => processVideoFile(file.name, email, processType, licenseeCampaignId, apiKey))
     .catch(err => err);
 };
 

@@ -1,7 +1,7 @@
 <html>
 <head>
   <title>Swingbot Licensee SDK Test Page</title>
-  <script src="./lib/swingbot-licensee-sdk.js"></script>
+  <script src="./lib/swingbot-licensee-sdk.min.js"></script>
 </head>
 <body>
   <h1>Testing the SDK</h1>
@@ -19,10 +19,10 @@
     // upload the file..
     SwingbotLicenseeSDK.uploadVideo(
       file,
-      '<your@email.com>',
+      'john.giatropoulos@gmail.com',
       'analyze',
       50,
-      '<your-api-key>' // API KEY
+      '12345' // API KEY
     ).then((result, err) => {
       if (err) {
         console.log(err);
