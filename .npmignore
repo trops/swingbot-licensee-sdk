@@ -12,3 +12,4 @@ package.default.json
 .npmignore
 swingbot-licensee-sdk.js.map
 swingbot-licensee-sdk.min.js
+.nvmrc
