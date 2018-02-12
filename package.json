@@ -1,11 +1,13 @@
 {
   "name": "swingbot-licensee-sdk",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Swingbot Licensee SDK for uploading videos",
-  "main": "lib/swingbot-licensee-sdk.js",
+  "main": "dist/swingbot-licensee-sdk.js",
   "scripts": {
-    "build": "webpack --env dev && webpack --env build && npm run test",
-    "dev": "webpack --progress --colors --env dev",
+    "build-www": "webpack --config webpack/sdk.config.js --env build",
+    "build-www-dev": "webpack --config webpack/sdk.config.js --env dev",
+    "build-npm": "webpack --config webpack/npm.config.js --env build",
+    "build-npm-dev": "webpack --config webpack/npm.config.js --env dev",
     "test": "mocha --require babel-core/register --colors ./test/*.spec.js",
     "test:watch": "mocha --require babel-core/register --colors -w ./test/*.spec.js"
   },

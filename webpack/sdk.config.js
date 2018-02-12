@@ -17,22 +17,14 @@ if (env === 'build') {
 }
 
 const config = {
-  entry: __dirname + '/src/index.js',
+  entry: __dirname + '/../src/index.js',
   devtool: 'source-map',
   output: {
-    path: __dirname + '/lib',
+    path: __dirname + '/../lib',
     filename: outputFile,
     library: 'SwingbotLicenseeSDK',
     libraryTarget: 'umd',
     umdNamedDefine: true
-  },
-  externals: {
-    axios: {
-      commonjs: 'axios',
-      commonjs2: 'axios',
-      amd: 'axios',
-      root: 'axios'
-    }
   },
   module: {
     loaders: [

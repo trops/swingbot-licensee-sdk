@@ -1,7 +1,7 @@
 <html>
 <head>
   <title>Swingbot Licensee SDK Test Page</title>
-  <script src="./lib/swingbot-licensee-sdk.min.js"></script>
+  <script src="./lib/swingbot-licensee-sdk.js"></script>
 </head>
 <body>
   <h1>Testing the SDK</h1>
@@ -21,6 +21,7 @@
       file,
       '<your@email.com>',
       'analyze',
+      50,
       '<your-api-key>' // API KEY
     ).then((result, err) => {
       if (err) {

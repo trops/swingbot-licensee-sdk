@@ -13,3 +13,4 @@ package.default.json
 swingbot-licensee-sdk.js.map
 swingbot-licensee-sdk.min.js
 .nvmrc
+webpack/*
