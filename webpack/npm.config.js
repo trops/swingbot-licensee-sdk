@@ -1,7 +1,7 @@
 /* global __dirname, require, module*/
 
 const webpack = require('webpack');
-const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
+const TerserPlugin = require('terser-webpack-plugin');
 const path = require('path');
 const env = require('yargs').argv.env; // use --env with webpack 2
 
@@ -10,7 +10,7 @@ let libraryName = 'swingbot-licensee-sdk';
 let plugins = [], outputFile;
 
 if (env === 'build') {
-  plugins.push(new UglifyJsPlugin({ minimize: true }));
+  plugins.push(new TerserPlugin());
   outputFile = libraryName + '.min.js';
 } else {
   outputFile = libraryName + '.js';
@@ -35,13 +35,15 @@ const config = {
     }
   },
   module: {
-    loaders: [
+    rules: [
       {
-        test: /\.js$/,
-        loader: 'babel-loader',
+        test: /\.m?js$/,
         exclude: /(node_modules|bower_components)/,
-        query: {
-          presets: ['env']
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['env'],
+          }
         }
       },
       {

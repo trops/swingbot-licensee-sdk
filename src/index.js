@@ -1,2 +1,3 @@
 import uploadVideo from './upload.js';
-export { uploadVideo };
+import { getAnalysisById } from './analysis.js';
+export { getAnalysisById, uploadVideo };
